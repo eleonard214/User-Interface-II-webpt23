@@ -1,1 +1,94 @@
 /* Add CSS styling here */
+html{
+    font-size: 62.5%;
+}
+header{
+    background:lightsalmon;
+}
+h1{
+    color:purple;
+    font-size:6rem;
+}
+h1:hover{
+    font-size: 8rem;
+    background:lightgreen;
+    color:rgb(209, 139, 9);
+}
+nav{
+    font-size:2rem;
+    padding:2rem;
+}
+.home{
+    border: .5rem solid purple;
+}
+.about{
+    border: .5rem solid purple;
+}
+.contact{
+    border: .5rem solid purple;
+}
+.projects{
+    border: .5rem solid purple;
+}
+.container1{
+    display:flex;
+}
+.toptext{
+    padding:2rem;
+}
+h2{
+    font-size:3rem;
+}
+#myprojects{
+    font-size: 3rem;
+}
+.toptext p{
+    font-size:2rem;
+    padding-top:2rem;
+}
+.gallery{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-between;
+    color: green;
+    font-size:2rem;
+}
+footer{
+    font-size:2rem;
+    display:flex;
+    background:lightgreen;
+    color:purple;
+    flex-direction:column;
+
+}
+
+.container2{
+    display:flex;
+    flex-direction:column;
+    
+}
+h3{
+    justify-content: center;
+    margin:auto;
+}
+footer button{
+    margin:auto;
+}
+.contactme{
+    font-size: 2rem;
+    justify-content: center;
+}
+button:hover {
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+
