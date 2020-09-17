@@ -1,9 +1,12 @@
 /* Add CSS styling here */
 html{
     font-size: 62.5%;
+    width:100vw;
 }
+
 header{
     background:lightsalmon;
+    width:100%;
 }
 h1{
     color:purple;
@@ -91,4 +94,45 @@ button:hover {
     to {
         transform: rotate(360deg);
     }
-
+}
+@media (max-width:800px){
+    html{
+        width:80vw;
+    }
+    header{
+        background:rgb(46, 238, 228);
+        width:80%;
+        
+    }
+    
+}
+@media (max-width:500px){
+    html{
+        width:80vw;
+    }
+    header{
+        background:cornflowerblue;
+        width:100%;
+    }
+    nav{
+        display:block;
+    }
+    .container1 {
+        flex-direction: column-reverse;
+        width:100%;
+    }
+    .container1 img{
+        width:100%;
+    }
+    .gallery{
+        width:100%;
+        flex-flow: column wrap;
+        flex
+    }
+    figure {
+        width:45%;
+    }
+    figure img{
+        width:100%;
+    }
+}
