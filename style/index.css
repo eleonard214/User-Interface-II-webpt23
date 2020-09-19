@@ -70,6 +70,9 @@ footer{
     flex-direction:column;
     
 }
+.show{
+    display:none;
+}
 h3{
     justify-content: center;
     margin:auto;
@@ -101,38 +104,71 @@ button:hover {
     }
     header{
         background:rgb(46, 238, 228);
-        width:80%;
+        width:100%;
         
     }
-    
-}
-@media (max-width:500px){
-    html{
-        width:80vw;
+    h1{
+        text-align: center;
+        font-size:4em;
     }
-    header{
-        background:cornflowerblue;
-        width:100%;
-    }
-    nav{
+    nav a{
         display:block;
+        /* display block removes display:flex and allows them to stack */
+        text-align:center;
     }
     .container1 {
         flex-direction: column-reverse;
         width:100%;
     }
+    .toptext{
+        width:100%;
+        padding:0;
+    }
+    .toptext p{
+        text-align: center;
+        font-size: 1rem;
+        padding:0;
+        margin:0;
+    }
+    h2{
+        font-size:2rem;
+        text-align:center;
+
+    }
+    .hidden{
+        display:none
+    }
+    .show{
+        display:block;
+        text-align: center;
+    }
+}
+
+@media (max-width:500px){
+    html{
+        width:75vw;
+    }
+    header{
+        background: lightsalmon;
+        width:100%;
+    }
+    h1{
+        font-size:4em ;
+    }
+    
+    h2{
+        text-align: center;
+    }
+    .container1 button{
+        display:none;
+    }
+    }
     .container1 img{
         width:100%;
     }
-    .gallery{
-        width:100%;
-        flex-flow: column wrap;
-        flex
-    }
-    figure {
-        width:45%;
-    }
-    figure img{
-        width:100%;
-    }
-}
+
+    
+        
+    
+    
+    
